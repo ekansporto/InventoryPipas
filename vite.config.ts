@@ -8,10 +8,9 @@ export default defineConfig({
   plugins: [
     tsConfigPaths(),
     tailwindcss(),
-    tanstackStart({ target: "vercel" }),
+    tanstackStart({
+      target: "vercel",
+    }),
     viteReact(),
   ],
-  resolve: {
-    dedupe: ["react", "react-dom", "@tanstack/react-router", "@tanstack/react-start"],
-  },
 });
