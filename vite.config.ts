@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     tsConfigPaths(),
     tailwindcss(),
-    tanstackStart({ target: "cloudflare-pages" }),
+    tanstackStart({ target: "vercel" }),
     viteReact(),
   ],
   resolve: {
