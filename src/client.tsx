@@ -1,14 +1,9 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+// @ts-nocheck
 import { StartClient } from "@tanstack/react-start/client";
+import { getRouter } from "./router";
 
-const root = document.getElementById("root");
-if (!root) {
-    throw new Error("Root element not found");
+const router = getRouter();
+
+export default function App() {
+    return <StartClient router={router} />;
 }
-
-createRoot(root).render(
-    <React.StrictMode>
-        <StartClient />
-    </React.StrictMode>,
-);
