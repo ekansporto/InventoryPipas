@@ -8,7 +8,7 @@ Project ini sudah dikonfigurasi untuk Vercel (target `vercel` di `vite.config.ts
 3. Framework Preset: **Other** (vercel.json sudah mengatur build).
 4. Build Command: `vite build` (sudah di vercel.json).
 5. Output: `.vercel/output` (otomatis dihasilkan oleh TanStack Start Vercel preset).
-6. Tambahkan Environment Variables yang dibutuhkan (mis. `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, dst).
+6. Tambahkann Environment Variables yang dibutuhkan (mis. `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, dst).
 7. Deploy.
 
 ## Catatan
