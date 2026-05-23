@@ -10,9 +10,11 @@
     "preview:3000": "vite preview --port 3000",
     "dev:vercel": "vercel dev",
     "build:dev": "vite build --mode development",
-    "preview": "vite preview",
+    "preview": "npm run build && wrangler dev",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -70,7 +72,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.37.3",
+    "@cloudflare/vite-plugin": "^1.38.0",
     "@eslint/js": "^9.32.0",
     "@types/node": "^22.16.5",
     "@types/react": "^19.2.0",
@@ -86,7 +88,7 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
     "vite": "^7.3.1",
-    "wrangler": "^4.93.1"
+    "wrangler": "^4.94.0"
   },
   "engines": {
     "node": "22.x"
